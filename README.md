@@ -95,5 +95,7 @@ If you have feature requests or bug reports, feel free to help out by sending pu
 
 ##License
 
+```KoombeaLoader``` is distributed under the terms and conditions of the [MIT license](https://github.com/koombea/KoombeaLoader/blob/master/LICENSE.txt).
+
 ##Credits
-KoombeaLoader is brought to you by [Koombea](https://www.koombea.com) and the Mobile Team.
+```KoombeaLoader``` is brought to you by [Koombea](https://www.koombea.com) and the Mobile Team.
