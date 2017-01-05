@@ -33,7 +33,7 @@ github "koombea/KoombeaLoader"
 
 ###Manually
 * Download this project.
-* Compile the framework
+* Compile the framework.
 * Import the KoombeaLoader framework to your project.
 
 ##Usage
