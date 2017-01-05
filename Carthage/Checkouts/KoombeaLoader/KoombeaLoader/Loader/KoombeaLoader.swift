@@ -42,42 +42,34 @@ public class KoombeaLoader {
         view.removeFromSuperview()
     }
     
-    ///Add your custom images sequence and copy text
     public func setupBasicLoader(images: [UIImage], copy: String) {
         viewLoader?.setupBasicLoader(images: images, copy: copy)
     }
     
-    ///Add your custom images sequence
     public func setupImages(images: [UIImage]) {
         viewLoader?.setupImages(images: images)
     }
     
-    ///Add you custom copy text
     public func setupLoadingCopy(copy: String) {
         viewLoader?.setupLoadingCopy(copy: copy)
     }
     
-    ///Setup imageView size
     public func setupLoaderImageSize(width: CGFloat, height: CGFloat) {
         viewLoader?.setupLoaderImageSize(width: width, height: height)
     }
     
-    ///Setup LoaderView background color
     public func setupLoaderBackgroundColor(color: UIColor) {
         viewLoader?.setupLoaderBackgroundColor(color: color)
     }
     
-    ///Setup copy text color
     public func setupCopyColor(color: UIColor) {
         viewLoader?.setupCopyColor(color: color)
     }
     
-    ///Setup copy text font and size
     public func setupCopyFont(font: UIFont) {
         viewLoader?.setupCopyFont(font: font)
     }
     
-    ///Setup animation time interval
     public func setupTimeInterval(timeInterval: Double) {
         viewLoader?.setupTimeInterval(timeInterval: timeInterval)
     }
