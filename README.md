@@ -4,7 +4,7 @@ KoombeaLoader is a clean and easy-to-us HUD for you to use with your custom anim
 
 ##Installation
 
-###From CocoaPods
+###CocoaPods
 [CocoaPods](https://cocoapods.org) is a dependency manager for Objective-C, which automates and simplifies the process of using 3rd-party libraries like ```KoombeaLoader``` in your projects. 
 
 First, add the following line to your [Podfile](http://guides.cocoapods.org/using/using-cocoapods.html):
@@ -31,7 +31,8 @@ github "koombea/KoombeaLoader"
 
 ###Manually
 * Download this project.
-* Import the KoombeaLoader Framework to your project.
+* Compile the framework
+* Import the KoombeaLoader framework to your project.
 
 ##Usage
 
