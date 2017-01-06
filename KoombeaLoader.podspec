@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "KoombeaLoader"
-  s.version      = "0.0.1"
+  s.version      = "1.0.0"
   s.summary      = "KoombeaLoader is a clean and easy-to-us HUD for you to use with your custom animation using images sequences develop in Swift."
 
   # This description is used to generate tags and improve search results.

@@ -13,6 +13,7 @@
 		2D080C4E1E1B0BCC002016B7 /* KoombeaLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = 2D080C4D1E1B0BCC002016B7 /* KoombeaLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2D080C8E1E1BF0A1002016B7 /* KoombeaLoaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D080C8D1E1BF0A1002016B7 /* KoombeaLoaderView.xib */; };
 		2D90396A1E1C0BA80099D677 /* KoombeaLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9039691E1C0BA80099D677 /* KoombeaLoaderView.swift */; };
+		2D9039721E1FFE560099D677 /* charmander.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D9039711E1FFE560099D677 /* charmander.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +36,7 @@
 		2D080C4D1E1B0BCC002016B7 /* KoombeaLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KoombeaLoader.h; sourceTree = "<group>"; };
 		2D080C8D1E1BF0A1002016B7 /* KoombeaLoaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KoombeaLoaderView.xib; path = Loader/KoombeaLoaderView.xib; sourceTree = "<group>"; };
 		2D9039691E1C0BA80099D677 /* KoombeaLoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KoombeaLoaderView.swift; path = Loader/KoombeaLoaderView.swift; sourceTree = "<group>"; };
+		2D9039711E1FFE560099D677 /* charmander.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = charmander.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 		2D080C341E1B0296002016B7 /* KoombeaLoaderTests */ = {
 			isa = PBXGroup;
 			children = (
+				2D9039711E1FFE560099D677 /* charmander.png */,
 				2D080C351E1B0296002016B7 /* KoombeaLoaderTests.swift */,
 				2D080C371E1B0296002016B7 /* Info.plist */,
 			);
@@ -207,6 +210,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2D9039721E1FFE560099D677 /* charmander.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
