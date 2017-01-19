@@ -38,14 +38,6 @@ class KoombeaLoaderView: UIView, CAAnimationDelegate {
         }
     }
     
-    func animationDidStart(_ anim: CAAnimation) {
-        
-    }
-    
-    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
-        rotate()
-    }
-    
     func setupBasicLoader(images: [UIImage], copy: String) {
         setupImages(images: images)
         setupLoadingCopy(copy: copy)
@@ -86,6 +78,16 @@ class KoombeaLoaderView: UIView, CAAnimationDelegate {
     
     func setupTimeInterval(timeInterval: Double) {
         self.timeInterval = timeInterval
+    }
+    
+    // MARK: CAAnimationDelegate
+    
+    func animationDidStart(_ anim: CAAnimation) {
+        
+    }
+    
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        rotate()
     }
     
 }
