@@ -67,6 +67,9 @@ KoombeaLoader can be customized via the following methods:
 ///Pass your custom images sequence and copy text
 public func setupBasicLoader(images: [UIImage], copy: String)
 
+///Add your custom image to rotate
+public func setupBasicLoaderRotation(image: UIImage)
+
 ///Add your custom images sequence
 public func setupImages(images: [UIImage])
 
