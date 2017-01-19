@@ -14,6 +14,7 @@
 		2D080C8E1E1BF0A1002016B7 /* KoombeaLoaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2D080C8D1E1BF0A1002016B7 /* KoombeaLoaderView.xib */; };
 		2D90396A1E1C0BA80099D677 /* KoombeaLoaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2D9039691E1C0BA80099D677 /* KoombeaLoaderView.swift */; };
 		2D9039721E1FFE560099D677 /* charmander.png in Resources */ = {isa = PBXBuildFile; fileRef = 2D9039711E1FFE560099D677 /* charmander.png */; };
+		6F3B987A1E2D631F007DD1F0 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F3B98791E2D631F007DD1F0 /* View.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		2D080C8D1E1BF0A1002016B7 /* KoombeaLoaderView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = KoombeaLoaderView.xib; path = Loader/KoombeaLoaderView.xib; sourceTree = "<group>"; };
 		2D9039691E1C0BA80099D677 /* KoombeaLoaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = KoombeaLoaderView.swift; path = Loader/KoombeaLoaderView.swift; sourceTree = "<group>"; };
 		2D9039711E1FFE560099D677 /* charmander.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = charmander.png; sourceTree = "<group>"; };
+		6F3B98791E2D631F007DD1F0 /* View.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = View.swift; path = Loader/Extension/View.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,11 +101,20 @@
 		2D080C411E1B02B0002016B7 /* Loader */ = {
 			isa = PBXGroup;
 			children = (
+				6F3B98781E2D6307007DD1F0 /* Extension */,
 				2D080C421E1B02C5002016B7 /* KoombeaLoader.swift */,
 				2D080C8D1E1BF0A1002016B7 /* KoombeaLoaderView.xib */,
 				2D9039691E1C0BA80099D677 /* KoombeaLoaderView.swift */,
 			);
 			name = Loader;
+			sourceTree = "<group>";
+		};
+		6F3B98781E2D6307007DD1F0 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				6F3B98791E2D631F007DD1F0 /* View.swift */,
+			);
+			name = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -223,6 +234,7 @@
 			files = (
 				2D90396A1E1C0BA80099D677 /* KoombeaLoaderView.swift in Sources */,
 				2D080C431E1B02C5002016B7 /* KoombeaLoader.swift in Sources */,
+				6F3B987A1E2D631F007DD1F0 /* View.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

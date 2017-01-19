@@ -29,22 +29,36 @@ public class KoombeaLoader {
         self.viewLoader = viewLoader
         view.addSubview(viewLoader)
     }
-
+    
     public func showLoader() {
+        if viewLoader!.rotating {
+            viewLoader?.animation = true
+            viewLoader?.rotate()
+        }
         view.alpha = 0
         appDelegate?.window??.addSubview(view)
         UIView.animate(withDuration: showAnimationDuration, delay: 0.0, options: .curveEaseIn, animations: {
             self.view.alpha = 1
         }, completion: nil)
+        
     }
     
     public func hideLoader() {
         view.removeFromSuperview()
+        if viewLoader!.rotating {
+            viewLoader?.animation = false
+        }
     }
     
     ///Add your custom images sequence and copy text
     public func setupBasicLoader(images: [UIImage], copy: String) {
         viewLoader?.setupBasicLoader(images: images, copy: copy)
+    }
+    
+    ///Add your custom image to rotate
+    public func setupBasicLoaderRotation(image: UIImage) {
+        viewLoader?.setupBasicLoaderRotation(image: image)
+        viewLoader?.rotating = true
     }
     
     ///Add your custom images sequence
@@ -81,5 +95,5 @@ public class KoombeaLoader {
     public func setupTimeInterval(timeInterval: Double) {
         viewLoader?.setupTimeInterval(timeInterval: timeInterval)
     }
-
+    
 }

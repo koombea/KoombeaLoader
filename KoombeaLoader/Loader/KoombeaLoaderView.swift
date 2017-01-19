@@ -8,22 +8,42 @@
 
 import UIKit
 
-class KoombeaLoaderView: UIView {
+class KoombeaLoaderView: UIView, CAAnimationDelegate {
     
     @IBOutlet weak var loaderImageView: UIImageView?
     @IBOutlet weak var loaderLabel: UILabel?
     @IBOutlet weak var loaderImageViewWidthConstraint: NSLayoutConstraint?
     @IBOutlet weak var loaderImageViewHeightConstraint: NSLayoutConstraint?
-    
+    @IBOutlet weak var loaderRotateImageView: UIImageView!
     ///Loader Animation Time Interval. Default value: 1.0
     var timeInterval = 1.0
-
+    var rotating = false
+    var animation = false
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
     
     func hideLoader() {
         removeFromSuperview()
+    }
+    
+    func setupBasicLoaderRotation(image: UIImage) {
+        loaderRotateImageView?.image = image
+    }
+    
+    func rotate() {
+        if animation {
+            loaderRotateImageView?.rotate360Degrees(duration: 1, completionDelegate: self)
+        }
+    }
+    
+    func animationDidStart(_ anim: CAAnimation) {
+        
+    }
+    
+    func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
+        rotate()
     }
     
     func setupBasicLoader(images: [UIImage], copy: String) {
@@ -67,5 +87,5 @@ class KoombeaLoaderView: UIView {
     func setupTimeInterval(timeInterval: Double) {
         self.timeInterval = timeInterval
     }
-
+    
 }
